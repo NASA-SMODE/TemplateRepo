@@ -1,0 +1,10 @@
+######################################################
+# Below is an example of what to include in your .gitignore file. Usually, we 
+don't track the .gitignore file. Here, we're adding it to the repository just
+so you have an exemple to follow. To use this file, delete this header
+and romove the pound sign in the lines below
+#######################################################
+#.gitignore
+#data
+#figs
+#*.pyc
