@@ -19,10 +19,10 @@ This structure could be applied to any project, regardless of the main program l
 
 *If you are working in Python, we recommend that you use [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) and that you add an ```environement.yml``` to your repository. Among other things, working with environments allows you to share your environment so other people can run your code on their machines using the exact same packages as you. More information about how to create and share environments can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-Note that the data folder is part of the directory structure but it is not advised to version-control and push data to GitHub unless it's plain text files (e.g., Markdown, csv, txt). If you keep all data used in your analysis in the data folder/subfolders and use relative paths in your code, for example:
+If you keep all data used in your analysis in the data folder/subfolders and use relative paths in your code, for example:
 
 ```
 data = np.loadtxt('../data/oceanus/ctd_000.csv')
 ```
 
-It becomes straightforward for a collaborator to clone your repository and run your code without having to adjust any paths. 
+It becomes straightforward for a collaborator to clone your repository and run your code without having to adjust any paths. Note that the data folder is part of the directory structure but it is not advised to version-control and push data to GitHub unless it's plain text files (e.g., Markdown, csv, txt); the .gitignore file included in this repository tells GitHub to ignore the contents of the data directory and some other files. 
